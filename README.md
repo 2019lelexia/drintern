@@ -16,3 +16,5 @@ pip install -r requirements.txt
 `align.py` 以及 `alignf.py` 均为可视化检查stereo地图与雷达点云地图重合情况的，其中双目深度点云是FoundationStereo出的。可以通过`python align.py`查看效果。
 
 `bag2folder...` 都是用于从rosbag里得到双目图像并存到文件夹的，因为matlab标定不能用rosbag，而且这样便于直观查看。
+
+`calib...` 都是用于时间offset对齐的，还会有一些可视化，可以运行`python calib_and_plot.py`查看。
