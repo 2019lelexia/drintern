@@ -7,6 +7,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+代码中需要用到一些素材，比如fastlio出的点云，可以在nas上的`/_Ext_Software/模块/感知/bag/seeker灵眸S1/seeker/zml`中下载并放到此仓库文件夹中，从而正常运行代码。
+
 `rec.py` 以及 `rec_mono.py` 均为接受rosbag话题同时按去畸变并且转到光轴平行位置的，mono是只有左目的。
 
 `stereo_rectify.py` 是离线检查左右目去畸变以及转到光轴平行位置的效果的。
